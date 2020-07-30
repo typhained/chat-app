@@ -3,16 +3,16 @@ import './Contact.css';
 
 const avatarImg = "https://randomuser.me/api/portraits/women/40.jpg";
 const name = "Typhaine DEMANGEON";
-const isOnline = true;
 
 function Contact() {
   return (
     <div className="Contact">
-        <img className="avatar" src={avatarImg}/>
+        <img className="avatar" src={avatarImg} alt="avatar"/>
         <div>
             <p className="name">{name}</p>
             <div className="status">
-                <p className="status-online"></p>
+                <div className="status-online"></div>
+                <p className="status-text">Online</p>
             </div>
         </div>
       
